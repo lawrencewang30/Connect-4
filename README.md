@@ -13,7 +13,7 @@ This is a simple implementation of the classic Connect 4 game built with Javascr
 
 ## Usage
 **To play the game**:  
-python -m http.server  
+Execute **python -m http.server** in your terminal   
 Go to **http://localhost:8000**  
 Navigate to the HTML file and enjoy!!
 
