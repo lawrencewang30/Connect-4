@@ -13,9 +13,10 @@ This is a simple implementation of the classic Connect 4 game built with Javascr
 
 ## Usage
 **To play the game**:  
-Execute **python -m http.server** in your terminal   
-Go to **http://localhost:8000**  
-Navigate to the HTML file and enjoy!!
+1. Execute **python -m http.server** in your terminal   
+2. Go to **http://localhost:8000**  
+3. Navigate to the HTML file  
+4. Enjoy the game!!
 
 ## Technologies Used
 - HTML: Markup language for structuring the game interface  
