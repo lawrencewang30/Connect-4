@@ -12,12 +12,12 @@ This is a simple implementation of the classic Connect 4 game built with Javascr
 - Interactive gameplay: Click to drop discs into the grid  
 
 ## Usage
-**To play the game**:
+**To play the game**:  
 python -m http.server  
 Go to **http://localhost:8000**  
 Navigate to the HTML file and enjoy!!
 
-### Technologies Used
+## Technologies Used
 - HTML: Markup language for structuring the game interface  
 - CSS: Stylesheet language for styling the game board and discs
 - Javascript: Programming language for implementing game logic and interactivity
