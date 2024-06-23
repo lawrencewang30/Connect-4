@@ -1,5 +1,3 @@
-
-
 var playerRed = "R";
 var playerPurple = "P";
 var currPlayer = playerRed;
@@ -65,6 +63,19 @@ function setPiece() {
     currColumns[c] = r; /* update the array for currColumns*/
 
     checkWinner();
+
+    // Check if the board if full and declare a tie
+    if (isBoardFull()) {
+        let tie = document.getElementById("Winner");
+        tie.innerText = "It's a Tie! Restart to Play Again";
+        tie.style.color = 'black';
+        gameOver = true;
+    }
+}
+
+function isBoardFull() {
+    // check if all columns are filled
+    return currColumns.every(column => column < 0);
 }
 
 function checkWinner() {
@@ -118,10 +129,12 @@ function checkWinner() {
 function setWinner(r, c) {
     let winner = document.getElementById("Winner");
     if (board[r][c] == playerRed) {
-        winner.innerText = "Red wins";
+        winner.innerText = "Red Wins! Game Over";
+        winner.style.color = 'red';
     }
     else {
-        winner.innerText = "Purple wins";
+        winner.innerText = "Purple Wins! Game Over";
+        winner.style.color = 'purple';
     }
     
     gameOver = true;
